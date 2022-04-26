@@ -1,6 +1,9 @@
 ## From Dirty to Clean: Addressing Environmental Contamination with Python
 For [Women in Data Science Puget Sound, 2022](https://www.widspugetsound.org/)
 
+### Intro Slides
+* [Google Slides](https://docs.google.com/presentation/d/1ArOT8_MlUAVMpzRi08uWxzl4gBcNM8--hUUL8AB8Qvc/edit?usp=sharing)
+
 ### Data Sources
 
 * [Washington State Environmental Data](https://ecology.wa.gov/)
