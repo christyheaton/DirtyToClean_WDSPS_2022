@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_f74e62f9251845e38eba9873cb755c8f {
+                #map_23fa51bd51d14a7998665a814a9a5bc7 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -249,13 +249,13 @@
     </div>
     
     
-            <div class="folium-map" id="map_f74e62f9251845e38eba9873cb755c8f" ></div>
+            <div class="folium-map" id="map_23fa51bd51d14a7998665a814a9a5bc7" ></div>
         
 </body>
 <script>    
     
-            var map_f74e62f9251845e38eba9873cb755c8f = L.map(
-                "map_f74e62f9251845e38eba9873cb755c8f",
+            var map_23fa51bd51d14a7998665a814a9a5bc7 = L.map(
+                "map_23fa51bd51d14a7998665a814a9a5bc7",
                 {
                     center: [47.76, -122.207],
                     crs: L.CRS.EPSG3857,
@@ -269,65 +269,65 @@
 
         
     
-            var tile_layer_39bccb0a416f43519f83e72fab91982b = L.tileLayer(
+            var tile_layer_ce7a27f66dc04950b591a3b4d2fdd24d = L.tileLayer(
                 "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
                 {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_f74e62f9251845e38eba9873cb755c8f);
+            ).addTo(map_23fa51bd51d14a7998665a814a9a5bc7);
         
     
-        function geo_json_7ae828c2497943bfad5899da83e5bc87_styler(feature) {
+        function geo_json_05ea2bfdba37425e95df307a022793e1_styler(feature) {
             switch(feature.id) {
                 default:
                     return {"color": "teal", "fillColor": "teal", "fillOpacity": 0.5, "weight": 2};
             }
         }
-        function geo_json_7ae828c2497943bfad5899da83e5bc87_highlighter(feature) {
+        function geo_json_05ea2bfdba37425e95df307a022793e1_highlighter(feature) {
             switch(feature.id) {
                 default:
                     return {"fillOpacity": 0.75};
             }
         }
-        function geo_json_7ae828c2497943bfad5899da83e5bc87_pointToLayer(feature, latlng) {
+        function geo_json_05ea2bfdba37425e95df307a022793e1_pointToLayer(feature, latlng) {
             var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
             
-            let style = geo_json_7ae828c2497943bfad5899da83e5bc87_styler(feature)
+            let style = geo_json_05ea2bfdba37425e95df307a022793e1_styler(feature)
             Object.assign(opts, style)
             
             return new L.CircleMarker(latlng, opts)
         }
 
-        function geo_json_7ae828c2497943bfad5899da83e5bc87_onEachFeature(feature, layer) {
+        function geo_json_05ea2bfdba37425e95df307a022793e1_onEachFeature(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     if(typeof e.target.setStyle === "function"){
-                        geo_json_7ae828c2497943bfad5899da83e5bc87.resetStyle(e.target);
+                        geo_json_05ea2bfdba37425e95df307a022793e1.resetStyle(e.target);
                     }
                 },
                 mouseover: function(e) {
                     if(typeof e.target.setStyle === "function"){
-                        const highlightStyle = geo_json_7ae828c2497943bfad5899da83e5bc87_highlighter(e.target.feature)
+                        const highlightStyle = geo_json_05ea2bfdba37425e95df307a022793e1_highlighter(e.target.feature)
                         e.target.setStyle(highlightStyle);
                     }
                 },
             });
         };
-        var geo_json_7ae828c2497943bfad5899da83e5bc87 = L.geoJson(null, {
-                onEachFeature: geo_json_7ae828c2497943bfad5899da83e5bc87_onEachFeature,
+        var geo_json_05ea2bfdba37425e95df307a022793e1 = L.geoJson(null, {
+                onEachFeature: geo_json_05ea2bfdba37425e95df307a022793e1_onEachFeature,
             
-                style: geo_json_7ae828c2497943bfad5899da83e5bc87_styler,
-                pointToLayer: geo_json_7ae828c2497943bfad5899da83e5bc87_pointToLayer
+                style: geo_json_05ea2bfdba37425e95df307a022793e1_styler,
+                pointToLayer: geo_json_05ea2bfdba37425e95df307a022793e1_pointToLayer
         });
 
-        function geo_json_7ae828c2497943bfad5899da83e5bc87_add (data) {
-            geo_json_7ae828c2497943bfad5899da83e5bc87
+        function geo_json_05ea2bfdba37425e95df307a022793e1_add (data) {
+            geo_json_05ea2bfdba37425e95df307a022793e1
                 .addData(data)
-                .addTo(map_f74e62f9251845e38eba9873cb755c8f);
+                .addTo(map_23fa51bd51d14a7998665a814a9a5bc7);
         }
-            geo_json_7ae828c2497943bfad5899da83e5bc87_add({"bbox": [-122.20944, 47.75874, -122.20517, 47.7627], "features": [{"bbox": [-122.20944, 47.75874, -122.20517, 47.7627], "geometry": {"coordinates": [[[-122.20915, 47.76263], [-122.20944, 47.75874], [-122.20517, 47.75927], [-122.20566, 47.7627], [-122.20916, 47.76263], [-122.20915, 47.76263]]], "type": "Polygon"}, "id": "0", "properties": {"__folium_color": "teal"}, "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_05ea2bfdba37425e95df307a022793e1_add({"bbox": [-122.20944, 47.75874, -122.20517, 47.7627], "features": [{"bbox": [-122.20944, 47.75874, -122.20517, 47.7627], "geometry": {"coordinates": [[[-122.20915, 47.76263], [-122.20944, 47.75874], [-122.20517, 47.75927], [-122.20566, 47.7627], [-122.20916, 47.76263], [-122.20915, 47.76263]]], "type": "Polygon"}, "id": "0", "properties": {"__folium_color": "teal"}, "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-    geo_json_7ae828c2497943bfad5899da83e5bc87.bindTooltip(
+    geo_json_05ea2bfdba37425e95df307a022793e1.bindTooltip(
     function(layer){
     let div = L.DomUtil.create('div');
     
@@ -336,59 +336,59 @@
     ,{"className": "foliumtooltip", "sticky": true});
                      
     
-        function geo_json_3979d91347a943f8bf33b702bfafaad1_styler(feature) {
+        function geo_json_d3ffc9d91dca4a0d8d5d428caaa89696_styler(feature) {
             switch(feature.id) {
                 default:
                     return {"color": "orange", "fillColor": "orange", "fillOpacity": 0.5, "weight": 2};
             }
         }
-        function geo_json_3979d91347a943f8bf33b702bfafaad1_highlighter(feature) {
+        function geo_json_d3ffc9d91dca4a0d8d5d428caaa89696_highlighter(feature) {
             switch(feature.id) {
                 default:
                     return {"fillOpacity": 0.75};
             }
         }
-        function geo_json_3979d91347a943f8bf33b702bfafaad1_pointToLayer(feature, latlng) {
+        function geo_json_d3ffc9d91dca4a0d8d5d428caaa89696_pointToLayer(feature, latlng) {
             var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
             
-            let style = geo_json_3979d91347a943f8bf33b702bfafaad1_styler(feature)
+            let style = geo_json_d3ffc9d91dca4a0d8d5d428caaa89696_styler(feature)
             Object.assign(opts, style)
             
             return new L.CircleMarker(latlng, opts)
         }
 
-        function geo_json_3979d91347a943f8bf33b702bfafaad1_onEachFeature(feature, layer) {
+        function geo_json_d3ffc9d91dca4a0d8d5d428caaa89696_onEachFeature(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     if(typeof e.target.setStyle === "function"){
-                        geo_json_3979d91347a943f8bf33b702bfafaad1.resetStyle(e.target);
+                        geo_json_d3ffc9d91dca4a0d8d5d428caaa89696.resetStyle(e.target);
                     }
                 },
                 mouseover: function(e) {
                     if(typeof e.target.setStyle === "function"){
-                        const highlightStyle = geo_json_3979d91347a943f8bf33b702bfafaad1_highlighter(e.target.feature)
+                        const highlightStyle = geo_json_d3ffc9d91dca4a0d8d5d428caaa89696_highlighter(e.target.feature)
                         e.target.setStyle(highlightStyle);
                     }
                 },
             });
         };
-        var geo_json_3979d91347a943f8bf33b702bfafaad1 = L.geoJson(null, {
-                onEachFeature: geo_json_3979d91347a943f8bf33b702bfafaad1_onEachFeature,
+        var geo_json_d3ffc9d91dca4a0d8d5d428caaa89696 = L.geoJson(null, {
+                onEachFeature: geo_json_d3ffc9d91dca4a0d8d5d428caaa89696_onEachFeature,
             
-                style: geo_json_3979d91347a943f8bf33b702bfafaad1_styler,
-                pointToLayer: geo_json_3979d91347a943f8bf33b702bfafaad1_pointToLayer
+                style: geo_json_d3ffc9d91dca4a0d8d5d428caaa89696_styler,
+                pointToLayer: geo_json_d3ffc9d91dca4a0d8d5d428caaa89696_pointToLayer
         });
 
-        function geo_json_3979d91347a943f8bf33b702bfafaad1_add (data) {
-            geo_json_3979d91347a943f8bf33b702bfafaad1
+        function geo_json_d3ffc9d91dca4a0d8d5d428caaa89696_add (data) {
+            geo_json_d3ffc9d91dca4a0d8d5d428caaa89696
                 .addData(data)
-                .addTo(map_f74e62f9251845e38eba9873cb755c8f);
+                .addTo(map_23fa51bd51d14a7998665a814a9a5bc7);
         }
-            geo_json_3979d91347a943f8bf33b702bfafaad1_add({"bbox": [-122.20775, 47.7605, -122.20692, 47.76111], "features": [{"bbox": [-122.20775, 47.7605, -122.20692, 47.76111], "geometry": {"coordinates": [[[-122.20775, 47.7605], [-122.20692, 47.7605], [-122.20692, 47.76111], [-122.20775, 47.76111], [-122.20775, 47.7605]]], "type": "Polygon"}, "id": "0", "properties": {"__folium_color": "orange"}, "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_d3ffc9d91dca4a0d8d5d428caaa89696_add({"bbox": [-122.20775, 47.7605, -122.20692, 47.76111], "features": [{"bbox": [-122.20775, 47.7605, -122.20692, 47.76111], "geometry": {"coordinates": [[[-122.20775, 47.7605], [-122.20692, 47.7605], [-122.20692, 47.76111], [-122.20775, 47.76111], [-122.20775, 47.7605]]], "type": "Polygon"}, "id": "0", "properties": {"__folium_color": "orange"}, "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-    geo_json_3979d91347a943f8bf33b702bfafaad1.bindTooltip(
+    geo_json_d3ffc9d91dca4a0d8d5d428caaa89696.bindTooltip(
     function(layer){
     let div = L.DomUtil.create('div');
     
@@ -397,7 +397,7 @@
     ,{"className": "foliumtooltip", "sticky": true});
                      
     
-        function geo_json_ea2d75bd798644fdb23a0c85b2523521_styler(feature) {
+        function geo_json_33f9a5ea276840f1aae4d7c2a89cab3c_styler(feature) {
             switch(feature.id) {
                 case "0": case "14": 
                     return {"color": "#ff4000", "fillColor": "#ff4000", "fillOpacity": 0.5, "weight": 2};
@@ -409,53 +409,53 @@
                     return {"color": "#ffff00", "fillColor": "#ffff00", "fillOpacity": 0.5, "weight": 2};
             }
         }
-        function geo_json_ea2d75bd798644fdb23a0c85b2523521_highlighter(feature) {
+        function geo_json_33f9a5ea276840f1aae4d7c2a89cab3c_highlighter(feature) {
             switch(feature.id) {
                 default:
                     return {"fillOpacity": 0.75};
             }
         }
-        function geo_json_ea2d75bd798644fdb23a0c85b2523521_pointToLayer(feature, latlng) {
+        function geo_json_33f9a5ea276840f1aae4d7c2a89cab3c_pointToLayer(feature, latlng) {
             var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3};
             
-            let style = geo_json_ea2d75bd798644fdb23a0c85b2523521_styler(feature)
+            let style = geo_json_33f9a5ea276840f1aae4d7c2a89cab3c_styler(feature)
             Object.assign(opts, style)
             
             return new L.CircleMarker(latlng, opts)
         }
 
-        function geo_json_ea2d75bd798644fdb23a0c85b2523521_onEachFeature(feature, layer) {
+        function geo_json_33f9a5ea276840f1aae4d7c2a89cab3c_onEachFeature(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     if(typeof e.target.setStyle === "function"){
-                        geo_json_ea2d75bd798644fdb23a0c85b2523521.resetStyle(e.target);
+                        geo_json_33f9a5ea276840f1aae4d7c2a89cab3c.resetStyle(e.target);
                     }
                 },
                 mouseover: function(e) {
                     if(typeof e.target.setStyle === "function"){
-                        const highlightStyle = geo_json_ea2d75bd798644fdb23a0c85b2523521_highlighter(e.target.feature)
+                        const highlightStyle = geo_json_33f9a5ea276840f1aae4d7c2a89cab3c_highlighter(e.target.feature)
                         e.target.setStyle(highlightStyle);
                     }
                 },
             });
         };
-        var geo_json_ea2d75bd798644fdb23a0c85b2523521 = L.geoJson(null, {
-                onEachFeature: geo_json_ea2d75bd798644fdb23a0c85b2523521_onEachFeature,
+        var geo_json_33f9a5ea276840f1aae4d7c2a89cab3c = L.geoJson(null, {
+                onEachFeature: geo_json_33f9a5ea276840f1aae4d7c2a89cab3c_onEachFeature,
             
-                style: geo_json_ea2d75bd798644fdb23a0c85b2523521_styler,
-                pointToLayer: geo_json_ea2d75bd798644fdb23a0c85b2523521_pointToLayer
+                style: geo_json_33f9a5ea276840f1aae4d7c2a89cab3c_styler,
+                pointToLayer: geo_json_33f9a5ea276840f1aae4d7c2a89cab3c_pointToLayer
         });
 
-        function geo_json_ea2d75bd798644fdb23a0c85b2523521_add (data) {
-            geo_json_ea2d75bd798644fdb23a0c85b2523521
+        function geo_json_33f9a5ea276840f1aae4d7c2a89cab3c_add (data) {
+            geo_json_33f9a5ea276840f1aae4d7c2a89cab3c
                 .addData(data)
-                .addTo(map_f74e62f9251845e38eba9873cb755c8f);
+                .addTo(map_23fa51bd51d14a7998665a814a9a5bc7);
         }
-            geo_json_ea2d75bd798644fdb23a0c85b2523521_add({"bbox": [-122.207652, 47.759411, -122.205869, 47.76098359], "features": [{"bbox": [-122.2071173, 47.76005199, -122.2071173, 47.76005199], "geometry": {"coordinates": [-122.2071173, 47.76005199], "type": "Point"}, "id": "0", "properties": {"Location_ID": "BB-2", "Maximum Exceedance Factor": 10.0, "PCE": 10.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ff4000", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.2071264, 47.7595819, -122.2071264, 47.7595819], "geometry": {"coordinates": [-122.2071264, 47.7595819], "type": "Point"}, "id": "1", "properties": {"Location_ID": "LANDINGBLMW-10", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.207581, 47.76024999, -122.207581, 47.76024999], "geometry": {"coordinates": [-122.207581, 47.76024999], "type": "Point"}, "id": "2", "properties": {"Location_ID": "ULTRABI-3", "Maximum Exceedance Factor": 2.0, "PCE": 0.0, "TCE": 0.0, "VC": 2.0, "__folium_color": "#ff8000", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.207394, 47.759458, -122.207394, 47.759458], "geometry": {"coordinates": [-122.207394, 47.759458], "type": "Point"}, "id": "3", "properties": {"Location_ID": "ULTRAUCCB-1", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.207422, 47.759608, -122.207422, 47.759608], "geometry": {"coordinates": [-122.207422, 47.759608], "type": "Point"}, "id": "4", "properties": {"Location_ID": "ULTRAUCCB-10", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.207164, 47.759908, -122.207164, 47.759908], "geometry": {"coordinates": [-122.207164, 47.759908], "type": "Point"}, "id": "5", "properties": {"Location_ID": "ULTRAUCCB-2", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.206758, 47.759908, -122.206758, 47.759908], "geometry": {"coordinates": [-122.206758, 47.759908], "type": "Point"}, "id": "6", "properties": {"Location_ID": "ULTRAUCCB-3", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.207078, 47.759681, -122.207078, 47.759681], "geometry": {"coordinates": [-122.207078, 47.759681], "type": "Point"}, "id": "7", "properties": {"Location_ID": "ULTRAUCCB-4", "Maximum Exceedance Factor": 2.0, "PCE": 2.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ff8000", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.206461, 47.759411, -122.206461, 47.759411], "geometry": {"coordinates": [-122.206461, 47.759411], "type": "Point"}, "id": "8", "properties": {"Location_ID": "ULTRAUCCB-5", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.206011, 47.759481, -122.206011, 47.759481], "geometry": {"coordinates": [-122.206011, 47.759481], "type": "Point"}, "id": "9", "properties": {"Location_ID": "ULTRAUCCB-6", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.205869, 47.759492, -122.205869, 47.759492], "geometry": {"coordinates": [-122.205869, 47.759492], "type": "Point"}, "id": "10", "properties": {"Location_ID": "ULTRAUCCB-7", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.206344, 47.759572, -122.206344, 47.759572], "geometry": {"coordinates": [-122.206344, 47.759572], "type": "Point"}, "id": "11", "properties": {"Location_ID": "ULTRAUCCB-9", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.2070701, 47.75997619, -122.2070701, 47.75997619], "geometry": {"coordinates": [-122.2070701, 47.75997619], "type": "Point"}, "id": "12", "properties": {"Location_ID": "ULTRAUCCMW-10", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.2071749, 47.76098359, -122.2071749, 47.76098359], "geometry": {"coordinates": [-122.2071749, 47.76098359], "type": "Point"}, "id": "13", "properties": {"Location_ID": "ULTRAUCCMW-17", "Maximum Exceedance Factor": 2.0, "PCE": 2.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ff8000", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.2071796, 47.76092708, -122.2071796, 47.76092708], "geometry": {"coordinates": [-122.2071796, 47.76092708], "type": "Point"}, "id": "14", "properties": {"Location_ID": "ULTRAUCCMW-18", "Maximum Exceedance Factor": 10.0, "PCE": 10.0, "TCE": 0.0, "VC": 10.0, "__folium_color": "#ff4000", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.2070648, 47.7608499, -122.2070648, 47.7608499], "geometry": {"coordinates": [-122.2070648, 47.7608499], "type": "Point"}, "id": "15", "properties": {"Location_ID": "ULTRAUCCMW-21", "Maximum Exceedance Factor": 1.0, "PCE": 0.0, "TCE": 0.0, "VC": 1.0, "__folium_color": "#ffbf00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.2074574, 47.76067809, -122.2074574, 47.76067809], "geometry": {"coordinates": [-122.2074574, 47.76067809], "type": "Point"}, "id": "16", "properties": {"Location_ID": "ULTRAUCCMW-24", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.207461, 47.76059447, -122.207461, 47.76059447], "geometry": {"coordinates": [-122.207461, 47.76059447], "type": "Point"}, "id": "17", "properties": {"Location_ID": "ULTRAUCCMW-25", "Maximum Exceedance Factor": 2.0, "PCE": 0.0, "TCE": 0.0, "VC": 2.0, "__folium_color": "#ff8000", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.207139, 47.759797, -122.207139, 47.759797], "geometry": {"coordinates": [-122.207139, 47.759797], "type": "Point"}, "id": "18", "properties": {"Location_ID": "ULTRAUCCMW-27", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.2070591, 47.76046052, -122.2070591, 47.76046052], "geometry": {"coordinates": [-122.2070591, 47.76046052], "type": "Point"}, "id": "19", "properties": {"Location_ID": "ULTRAUCCMW-29", "Maximum Exceedance Factor": 1.0, "PCE": 1.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffbf00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.2071912, 47.7607985, -122.2071912, 47.7607985], "geometry": {"coordinates": [-122.2071912, 47.7607985], "type": "Point"}, "id": "20", "properties": {"Location_ID": "ULTRAUCCMW-5", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.2073406, 47.76059739, -122.2073406, 47.76059739], "geometry": {"coordinates": [-122.2073406, 47.76059739], "type": "Point"}, "id": "21", "properties": {"Location_ID": "ULTRAUCCMW-7", "Maximum Exceedance Factor": 2.0, "PCE": 0.0, "TCE": 0.0, "VC": 2.0, "__folium_color": "#ff8000", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.207335, 47.76009589, -122.207335, 47.76009589], "geometry": {"coordinates": [-122.207335, 47.76009589], "type": "Point"}, "id": "22", "properties": {"Location_ID": "ULTRAUCCMW-8", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.207652, 47.76010756, -122.207652, 47.76010756], "geometry": {"coordinates": [-122.207652, 47.76010756], "type": "Point"}, "id": "23", "properties": {"Location_ID": "ULTRAUCCMW-9", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_33f9a5ea276840f1aae4d7c2a89cab3c_add({"bbox": [-122.207652, 47.759411, -122.205869, 47.76098359], "features": [{"bbox": [-122.2071173, 47.76005199, -122.2071173, 47.76005199], "geometry": {"coordinates": [-122.2071173, 47.76005199], "type": "Point"}, "id": "0", "properties": {"Location_ID": "BB-2", "Maximum Exceedance Factor": 10.0, "PCE": 10.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ff4000", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.2071264, 47.7595819, -122.2071264, 47.7595819], "geometry": {"coordinates": [-122.2071264, 47.7595819], "type": "Point"}, "id": "1", "properties": {"Location_ID": "LANDINGBLMW-10", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.207581, 47.76024999, -122.207581, 47.76024999], "geometry": {"coordinates": [-122.207581, 47.76024999], "type": "Point"}, "id": "2", "properties": {"Location_ID": "ULTRABI-3", "Maximum Exceedance Factor": 2.0, "PCE": -1.0, "TCE": -1.0, "VC": 2.0, "__folium_color": "#ff8000", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.207394, 47.759458, -122.207394, 47.759458], "geometry": {"coordinates": [-122.207394, 47.759458], "type": "Point"}, "id": "3", "properties": {"Location_ID": "ULTRAUCCB-1", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.207422, 47.759608, -122.207422, 47.759608], "geometry": {"coordinates": [-122.207422, 47.759608], "type": "Point"}, "id": "4", "properties": {"Location_ID": "ULTRAUCCB-10", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.207164, 47.759908, -122.207164, 47.759908], "geometry": {"coordinates": [-122.207164, 47.759908], "type": "Point"}, "id": "5", "properties": {"Location_ID": "ULTRAUCCB-2", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.206758, 47.759908, -122.206758, 47.759908], "geometry": {"coordinates": [-122.206758, 47.759908], "type": "Point"}, "id": "6", "properties": {"Location_ID": "ULTRAUCCB-3", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.207078, 47.759681, -122.207078, 47.759681], "geometry": {"coordinates": [-122.207078, 47.759681], "type": "Point"}, "id": "7", "properties": {"Location_ID": "ULTRAUCCB-4", "Maximum Exceedance Factor": 2.0, "PCE": 2.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ff8000", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.206461, 47.759411, -122.206461, 47.759411], "geometry": {"coordinates": [-122.206461, 47.759411], "type": "Point"}, "id": "8", "properties": {"Location_ID": "ULTRAUCCB-5", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.206011, 47.759481, -122.206011, 47.759481], "geometry": {"coordinates": [-122.206011, 47.759481], "type": "Point"}, "id": "9", "properties": {"Location_ID": "ULTRAUCCB-6", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.205869, 47.759492, -122.205869, 47.759492], "geometry": {"coordinates": [-122.205869, 47.759492], "type": "Point"}, "id": "10", "properties": {"Location_ID": "ULTRAUCCB-7", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.206344, 47.759572, -122.206344, 47.759572], "geometry": {"coordinates": [-122.206344, 47.759572], "type": "Point"}, "id": "11", "properties": {"Location_ID": "ULTRAUCCB-9", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.2070701, 47.75997619, -122.2070701, 47.75997619], "geometry": {"coordinates": [-122.2070701, 47.75997619], "type": "Point"}, "id": "12", "properties": {"Location_ID": "ULTRAUCCMW-10", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.2071749, 47.76098359, -122.2071749, 47.76098359], "geometry": {"coordinates": [-122.2071749, 47.76098359], "type": "Point"}, "id": "13", "properties": {"Location_ID": "ULTRAUCCMW-17", "Maximum Exceedance Factor": 2.0, "PCE": 2.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ff8000", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.2071796, 47.76092708, -122.2071796, 47.76092708], "geometry": {"coordinates": [-122.2071796, 47.76092708], "type": "Point"}, "id": "14", "properties": {"Location_ID": "ULTRAUCCMW-18", "Maximum Exceedance Factor": 10.0, "PCE": 10.0, "TCE": -1.0, "VC": 10.0, "__folium_color": "#ff4000", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.2070648, 47.7608499, -122.2070648, 47.7608499], "geometry": {"coordinates": [-122.2070648, 47.7608499], "type": "Point"}, "id": "15", "properties": {"Location_ID": "ULTRAUCCMW-21", "Maximum Exceedance Factor": 1.0, "PCE": -1.0, "TCE": -1.0, "VC": 1.0, "__folium_color": "#ffbf00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.2074574, 47.76067809, -122.2074574, 47.76067809], "geometry": {"coordinates": [-122.2074574, 47.76067809], "type": "Point"}, "id": "16", "properties": {"Location_ID": "ULTRAUCCMW-24", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.207461, 47.76059447, -122.207461, 47.76059447], "geometry": {"coordinates": [-122.207461, 47.76059447], "type": "Point"}, "id": "17", "properties": {"Location_ID": "ULTRAUCCMW-25", "Maximum Exceedance Factor": 2.0, "PCE": -1.0, "TCE": -1.0, "VC": 2.0, "__folium_color": "#ff8000", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.207139, 47.759797, -122.207139, 47.759797], "geometry": {"coordinates": [-122.207139, 47.759797], "type": "Point"}, "id": "18", "properties": {"Location_ID": "ULTRAUCCMW-27", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.2070591, 47.76046052, -122.2070591, 47.76046052], "geometry": {"coordinates": [-122.2070591, 47.76046052], "type": "Point"}, "id": "19", "properties": {"Location_ID": "ULTRAUCCMW-29", "Maximum Exceedance Factor": 1.0, "PCE": 1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffbf00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.2071912, 47.7607985, -122.2071912, 47.7607985], "geometry": {"coordinates": [-122.2071912, 47.7607985], "type": "Point"}, "id": "20", "properties": {"Location_ID": "ULTRAUCCMW-5", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.2073406, 47.76059739, -122.2073406, 47.76059739], "geometry": {"coordinates": [-122.2073406, 47.76059739], "type": "Point"}, "id": "21", "properties": {"Location_ID": "ULTRAUCCMW-7", "Maximum Exceedance Factor": 2.0, "PCE": -1.0, "TCE": -1.0, "VC": 2.0, "__folium_color": "#ff8000", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.207335, 47.76009589, -122.207335, 47.76009589], "geometry": {"coordinates": [-122.207335, 47.76009589], "type": "Point"}, "id": "22", "properties": {"Location_ID": "ULTRAUCCMW-8", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.207652, 47.76010756, -122.207652, 47.76010756], "geometry": {"coordinates": [-122.207652, 47.76010756], "type": "Point"}, "id": "23", "properties": {"Location_ID": "ULTRAUCCMW-9", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-    geo_json_ea2d75bd798644fdb23a0c85b2523521.bindTooltip(
+    geo_json_33f9a5ea276840f1aae4d7c2a89cab3c.bindTooltip(
     function(layer){
     let div = L.DomUtil.create('div');
     
@@ -479,7 +479,7 @@
     ,{"className": "foliumtooltip", "sticky": true});
                      
     
-        function geo_json_20a20d04a6264e548b9fb1118d1b55ca_styler(feature) {
+        function geo_json_f3eac4227ac1497789158f754e591f49_styler(feature) {
             switch(feature.id) {
                 case "2": case "13": case "17": case "19": 
                     return {"color": "#ff8000", "fillColor": "#ff8000", "fillOpacity": 0.5, "weight": 2};
@@ -491,53 +491,53 @@
                     return {"color": "#ffff00", "fillColor": "#ffff00", "fillOpacity": 0.5, "weight": 2};
             }
         }
-        function geo_json_20a20d04a6264e548b9fb1118d1b55ca_highlighter(feature) {
+        function geo_json_f3eac4227ac1497789158f754e591f49_highlighter(feature) {
             switch(feature.id) {
                 default:
                     return {"fillOpacity": 0.75};
             }
         }
-        function geo_json_20a20d04a6264e548b9fb1118d1b55ca_pointToLayer(feature, latlng) {
+        function geo_json_f3eac4227ac1497789158f754e591f49_pointToLayer(feature, latlng) {
             var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3};
             
-            let style = geo_json_20a20d04a6264e548b9fb1118d1b55ca_styler(feature)
+            let style = geo_json_f3eac4227ac1497789158f754e591f49_styler(feature)
             Object.assign(opts, style)
             
             return new L.CircleMarker(latlng, opts)
         }
 
-        function geo_json_20a20d04a6264e548b9fb1118d1b55ca_onEachFeature(feature, layer) {
+        function geo_json_f3eac4227ac1497789158f754e591f49_onEachFeature(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     if(typeof e.target.setStyle === "function"){
-                        geo_json_20a20d04a6264e548b9fb1118d1b55ca.resetStyle(e.target);
+                        geo_json_f3eac4227ac1497789158f754e591f49.resetStyle(e.target);
                     }
                 },
                 mouseover: function(e) {
                     if(typeof e.target.setStyle === "function"){
-                        const highlightStyle = geo_json_20a20d04a6264e548b9fb1118d1b55ca_highlighter(e.target.feature)
+                        const highlightStyle = geo_json_f3eac4227ac1497789158f754e591f49_highlighter(e.target.feature)
                         e.target.setStyle(highlightStyle);
                     }
                 },
             });
         };
-        var geo_json_20a20d04a6264e548b9fb1118d1b55ca = L.geoJson(null, {
-                onEachFeature: geo_json_20a20d04a6264e548b9fb1118d1b55ca_onEachFeature,
+        var geo_json_f3eac4227ac1497789158f754e591f49 = L.geoJson(null, {
+                onEachFeature: geo_json_f3eac4227ac1497789158f754e591f49_onEachFeature,
             
-                style: geo_json_20a20d04a6264e548b9fb1118d1b55ca_styler,
-                pointToLayer: geo_json_20a20d04a6264e548b9fb1118d1b55ca_pointToLayer
+                style: geo_json_f3eac4227ac1497789158f754e591f49_styler,
+                pointToLayer: geo_json_f3eac4227ac1497789158f754e591f49_pointToLayer
         });
 
-        function geo_json_20a20d04a6264e548b9fb1118d1b55ca_add (data) {
-            geo_json_20a20d04a6264e548b9fb1118d1b55ca
+        function geo_json_f3eac4227ac1497789158f754e591f49_add (data) {
+            geo_json_f3eac4227ac1497789158f754e591f49
                 .addData(data)
-                .addTo(map_f74e62f9251845e38eba9873cb755c8f);
+                .addTo(map_23fa51bd51d14a7998665a814a9a5bc7);
         }
-            geo_json_20a20d04a6264e548b9fb1118d1b55ca_add({"bbox": [-122.2078565, 47.759411, -122.205869, 47.76092133], "features": [{"bbox": [-122.207394, 47.759458, -122.207394, 47.759458], "geometry": {"coordinates": [-122.207394, 47.759458], "type": "Point"}, "id": "0", "properties": {"Location_ID": "ULTRAUCCB-1", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.207422, 47.759608, -122.207422, 47.759608], "geometry": {"coordinates": [-122.207422, 47.759608], "type": "Point"}, "id": "1", "properties": {"Location_ID": "ULTRAUCCB-10", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.207164, 47.759908, -122.207164, 47.759908], "geometry": {"coordinates": [-122.207164, 47.759908], "type": "Point"}, "id": "2", "properties": {"Location_ID": "ULTRAUCCB-2", "Maximum Exceedance Factor": 2.0, "PCE": 2.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ff8000", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.206758, 47.759908, -122.206758, 47.759908], "geometry": {"coordinates": [-122.206758, 47.759908], "type": "Point"}, "id": "3", "properties": {"Location_ID": "ULTRAUCCB-3", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.207078, 47.759681, -122.207078, 47.759681], "geometry": {"coordinates": [-122.207078, 47.759681], "type": "Point"}, "id": "4", "properties": {"Location_ID": "ULTRAUCCB-4", "Maximum Exceedance Factor": 1.0, "PCE": 1.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffbf00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.206461, 47.759411, -122.206461, 47.759411], "geometry": {"coordinates": [-122.206461, 47.759411], "type": "Point"}, "id": "5", "properties": {"Location_ID": "ULTRAUCCB-5", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.206011, 47.759481, -122.206011, 47.759481], "geometry": {"coordinates": [-122.206011, 47.759481], "type": "Point"}, "id": "6", "properties": {"Location_ID": "ULTRAUCCB-6", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.205869, 47.759492, -122.205869, 47.759492], "geometry": {"coordinates": [-122.205869, 47.759492], "type": "Point"}, "id": "7", "properties": {"Location_ID": "ULTRAUCCB-7", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.207278, 47.760114, -122.207278, 47.760114], "geometry": {"coordinates": [-122.207278, 47.760114], "type": "Point"}, "id": "8", "properties": {"Location_ID": "ULTRAUCCB-8", "Maximum Exceedance Factor": 10.0, "PCE": 10.0, "TCE": 0.0, "VC": 2.0, "__folium_color": "#ff4000", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.206344, 47.759572, -122.206344, 47.759572], "geometry": {"coordinates": [-122.206344, 47.759572], "type": "Point"}, "id": "9", "properties": {"Location_ID": "ULTRAUCCB-9", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.2068277, 47.76072187, -122.2068277, 47.76072187], "geometry": {"coordinates": [-122.2068277, 47.76072187], "type": "Point"}, "id": "10", "properties": {"Location_ID": "ULTRAUCCMW-28D", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.2070447, 47.76046974, -122.2070447, 47.76046974], "geometry": {"coordinates": [-122.2070447, 47.76046974], "type": "Point"}, "id": "11", "properties": {"Location_ID": "ULTRAUCCMW-29D", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.2067247, 47.76013058, -122.2067247, 47.76013058], "geometry": {"coordinates": [-122.2067247, 47.76013058], "type": "Point"}, "id": "12", "properties": {"Location_ID": "ULTRAUCCMW-30D", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.2070344, 47.75989379, -122.2070344, 47.75989379], "geometry": {"coordinates": [-122.2070344, 47.75989379], "type": "Point"}, "id": "13", "properties": {"Location_ID": "ULTRAUCCMW-31D", "Maximum Exceedance Factor": 2.0, "PCE": 2.0, "TCE": 0.0, "VC": 1.0, "__folium_color": "#ff8000", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.2074872, 47.75975152, -122.2074872, 47.75975152], "geometry": {"coordinates": [-122.2074872, 47.75975152], "type": "Point"}, "id": "14", "properties": {"Location_ID": "ULTRAUCCMW-32", "Maximum Exceedance Factor": 1.0, "PCE": 1.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffbf00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.2074882, 47.75974273, -122.2074882, 47.75974273], "geometry": {"coordinates": [-122.2074882, 47.75974273], "type": "Point"}, "id": "15", "properties": {"Location_ID": "ULTRAUCCMW-32D", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.2071755, 47.75948245, -122.2071755, 47.75948245], "geometry": {"coordinates": [-122.2071755, 47.75948245], "type": "Point"}, "id": "16", "properties": {"Location_ID": "ULTRAUCCMW-33D", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.2067164, 47.75958696, -122.2067164, 47.75958696], "geometry": {"coordinates": [-122.2067164, 47.75958696], "type": "Point"}, "id": "17", "properties": {"Location_ID": "ULTRAUCCMW-34D", "Maximum Exceedance Factor": 2.0, "PCE": 2.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ff8000", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.2078565, 47.75962889, -122.2078565, 47.75962889], "geometry": {"coordinates": [-122.2078565, 47.75962889], "type": "Point"}, "id": "18", "properties": {"Location_ID": "ULTRAUCCMW-35D", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.2072571, 47.76019711, -122.2072571, 47.76019711], "geometry": {"coordinates": [-122.2072571, 47.76019711], "type": "Point"}, "id": "19", "properties": {"Location_ID": "ULTRAUCCMW-36D", "Maximum Exceedance Factor": 2.0, "PCE": 2.0, "TCE": 0.0, "VC": 2.0, "__folium_color": "#ff8000", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}, {"bbox": [-122.2072483, 47.76092133, -122.2072483, 47.76092133], "geometry": {"coordinates": [-122.2072483, 47.76092133], "type": "Point"}, "id": "20", "properties": {"Location_ID": "ULTRAUCCMW-4", "Maximum Exceedance Factor": 0.0, "PCE": 0.0, "TCE": 0.0, "VC": 0.0, "__folium_color": "#ffff00", "cDCE": 0.0, "tDCE": 0.0}, "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_f3eac4227ac1497789158f754e591f49_add({"bbox": [-122.2078565, 47.759411, -122.205869, 47.76092133], "features": [{"bbox": [-122.207394, 47.759458, -122.207394, 47.759458], "geometry": {"coordinates": [-122.207394, 47.759458], "type": "Point"}, "id": "0", "properties": {"Location_ID": "ULTRAUCCB-1", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.207422, 47.759608, -122.207422, 47.759608], "geometry": {"coordinates": [-122.207422, 47.759608], "type": "Point"}, "id": "1", "properties": {"Location_ID": "ULTRAUCCB-10", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.207164, 47.759908, -122.207164, 47.759908], "geometry": {"coordinates": [-122.207164, 47.759908], "type": "Point"}, "id": "2", "properties": {"Location_ID": "ULTRAUCCB-2", "Maximum Exceedance Factor": 2.0, "PCE": 2.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ff8000", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.206758, 47.759908, -122.206758, 47.759908], "geometry": {"coordinates": [-122.206758, 47.759908], "type": "Point"}, "id": "3", "properties": {"Location_ID": "ULTRAUCCB-3", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.207078, 47.759681, -122.207078, 47.759681], "geometry": {"coordinates": [-122.207078, 47.759681], "type": "Point"}, "id": "4", "properties": {"Location_ID": "ULTRAUCCB-4", "Maximum Exceedance Factor": 1.0, "PCE": 1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffbf00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.206461, 47.759411, -122.206461, 47.759411], "geometry": {"coordinates": [-122.206461, 47.759411], "type": "Point"}, "id": "5", "properties": {"Location_ID": "ULTRAUCCB-5", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.206011, 47.759481, -122.206011, 47.759481], "geometry": {"coordinates": [-122.206011, 47.759481], "type": "Point"}, "id": "6", "properties": {"Location_ID": "ULTRAUCCB-6", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.205869, 47.759492, -122.205869, 47.759492], "geometry": {"coordinates": [-122.205869, 47.759492], "type": "Point"}, "id": "7", "properties": {"Location_ID": "ULTRAUCCB-7", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.207278, 47.760114, -122.207278, 47.760114], "geometry": {"coordinates": [-122.207278, 47.760114], "type": "Point"}, "id": "8", "properties": {"Location_ID": "ULTRAUCCB-8", "Maximum Exceedance Factor": 10.0, "PCE": 10.0, "TCE": -1.0, "VC": 2.0, "__folium_color": "#ff4000", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.206344, 47.759572, -122.206344, 47.759572], "geometry": {"coordinates": [-122.206344, 47.759572], "type": "Point"}, "id": "9", "properties": {"Location_ID": "ULTRAUCCB-9", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.2068277, 47.76072187, -122.2068277, 47.76072187], "geometry": {"coordinates": [-122.2068277, 47.76072187], "type": "Point"}, "id": "10", "properties": {"Location_ID": "ULTRAUCCMW-28D", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.2070447, 47.76046974, -122.2070447, 47.76046974], "geometry": {"coordinates": [-122.2070447, 47.76046974], "type": "Point"}, "id": "11", "properties": {"Location_ID": "ULTRAUCCMW-29D", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.2067247, 47.76013058, -122.2067247, 47.76013058], "geometry": {"coordinates": [-122.2067247, 47.76013058], "type": "Point"}, "id": "12", "properties": {"Location_ID": "ULTRAUCCMW-30D", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.2070344, 47.75989379, -122.2070344, 47.75989379], "geometry": {"coordinates": [-122.2070344, 47.75989379], "type": "Point"}, "id": "13", "properties": {"Location_ID": "ULTRAUCCMW-31D", "Maximum Exceedance Factor": 2.0, "PCE": 2.0, "TCE": -1.0, "VC": 1.0, "__folium_color": "#ff8000", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.2074872, 47.75975152, -122.2074872, 47.75975152], "geometry": {"coordinates": [-122.2074872, 47.75975152], "type": "Point"}, "id": "14", "properties": {"Location_ID": "ULTRAUCCMW-32", "Maximum Exceedance Factor": 1.0, "PCE": 1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffbf00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.2074882, 47.75974273, -122.2074882, 47.75974273], "geometry": {"coordinates": [-122.2074882, 47.75974273], "type": "Point"}, "id": "15", "properties": {"Location_ID": "ULTRAUCCMW-32D", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.2071755, 47.75948245, -122.2071755, 47.75948245], "geometry": {"coordinates": [-122.2071755, 47.75948245], "type": "Point"}, "id": "16", "properties": {"Location_ID": "ULTRAUCCMW-33D", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.2067164, 47.75958696, -122.2067164, 47.75958696], "geometry": {"coordinates": [-122.2067164, 47.75958696], "type": "Point"}, "id": "17", "properties": {"Location_ID": "ULTRAUCCMW-34D", "Maximum Exceedance Factor": 2.0, "PCE": 2.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ff8000", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.2078565, 47.75962889, -122.2078565, 47.75962889], "geometry": {"coordinates": [-122.2078565, 47.75962889], "type": "Point"}, "id": "18", "properties": {"Location_ID": "ULTRAUCCMW-35D", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.2072571, 47.76019711, -122.2072571, 47.76019711], "geometry": {"coordinates": [-122.2072571, 47.76019711], "type": "Point"}, "id": "19", "properties": {"Location_ID": "ULTRAUCCMW-36D", "Maximum Exceedance Factor": 2.0, "PCE": 2.0, "TCE": -1.0, "VC": 2.0, "__folium_color": "#ff8000", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}, {"bbox": [-122.2072483, 47.76092133, -122.2072483, 47.76092133], "geometry": {"coordinates": [-122.2072483, 47.76092133], "type": "Point"}, "id": "20", "properties": {"Location_ID": "ULTRAUCCMW-4", "Maximum Exceedance Factor": -1.0, "PCE": -1.0, "TCE": -1.0, "VC": -1.0, "__folium_color": "#ffff00", "cDCE": -1.0, "tDCE": -1.0}, "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-    geo_json_20a20d04a6264e548b9fb1118d1b55ca.bindTooltip(
+    geo_json_f3eac4227ac1497789158f754e591f49.bindTooltip(
     function(layer){
     let div = L.DomUtil.create('div');
     
@@ -561,23 +561,23 @@
     ,{"className": "foliumtooltip", "sticky": true});
                      
     
-            var layer_control_4219c85aa5914d7781367ca043060790 = {
+            var layer_control_f76c3d9acce644d0ac91a21f747cacef = {
                 base_layers : {
-                    "stamentoner" : tile_layer_39bccb0a416f43519f83e72fab91982b,
+                    "stamentoner" : tile_layer_ce7a27f66dc04950b591a3b4d2fdd24d,
                 },
                 overlays :  {
-                    "Site Area" : geo_json_7ae828c2497943bfad5899da83e5bc87,
-                    "Area of Concern" : geo_json_3979d91347a943f8bf33b702bfafaad1,
-                    "Shallow" : geo_json_ea2d75bd798644fdb23a0c85b2523521,
-                    "Deep" : geo_json_20a20d04a6264e548b9fb1118d1b55ca,
+                    "Site Area" : geo_json_05ea2bfdba37425e95df307a022793e1,
+                    "Area of Concern" : geo_json_d3ffc9d91dca4a0d8d5d428caaa89696,
+                    "Shallow" : geo_json_33f9a5ea276840f1aae4d7c2a89cab3c,
+                    "Deep" : geo_json_f3eac4227ac1497789158f754e591f49,
                 },
             };
             L.control.layers(
-                layer_control_4219c85aa5914d7781367ca043060790.base_layers,
-                layer_control_4219c85aa5914d7781367ca043060790.overlays,
+                layer_control_f76c3d9acce644d0ac91a21f747cacef.base_layers,
+                layer_control_f76c3d9acce644d0ac91a21f747cacef.overlays,
                 {"autoZIndex": true, "collapsed": true, "position": "topright"}
-            ).addTo(map_f74e62f9251845e38eba9873cb755c8f);
-            geo_json_ea2d75bd798644fdb23a0c85b2523521.remove();
-            geo_json_20a20d04a6264e548b9fb1118d1b55ca.remove();
+            ).addTo(map_23fa51bd51d14a7998665a814a9a5bc7);
+            geo_json_33f9a5ea276840f1aae4d7c2a89cab3c.remove();
+            geo_json_f3eac4227ac1497789158f754e591f49.remove();
         
 </script>
